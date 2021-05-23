@@ -1,0 +1,10 @@
+.card{
+    max-width: 18rem;
+    display: inline-block;
+    margin: 10px 50px;
+}
+.infected{
+    background-color: blanchedalmond;
+    color: black;
+    
+}
