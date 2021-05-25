@@ -10,6 +10,8 @@ import logo from './image.png';
 
 
 
+
+
 class App extends Component {
   constructor(){
     super();
@@ -31,15 +33,15 @@ class App extends Component {
     const fetchedData =await fetchData(country);
     this.setState({data : fetchedData, country: country});
     console.log(fetchedData);
-    // fetch data
-    // set the state
+   
   }
 
   render() {
     const { data,country } = this.state;
     return (
       
-      <div className="tc"> 
+      <div className="tc App"> 
+      
         <img src={logo} className="image" alt="covid19"/>
         <Cards  data={data}/>
         <Country  handleCountryChange={this.handleCountryChange}/>
